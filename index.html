@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de gorjeta</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <header>
@@ -17,7 +18,7 @@
                 <label for="conta">Conta</label>
                 <div>
                     <img src="./images/icon-dollar.svg" alt="icone do cifrão">
-                    <input type="number" nome="conta" id="conta">
+                    <input type="number" nome="conta" id="conta" placeholder="0">
                 </div>
             </div>
             <div class="gorjeta">
@@ -28,14 +29,36 @@
                     <input type="button" value="15%">
                     <input type="button" value="25%">
                     <input type="button" value="50%">
-                    <input type="number" name="outra" id="outra">
+                    <input type="number" name="outra" id="outra" placeholder="Outra">
                 </div>
             </div>
            <div class="pessoas">
-            <label for="conta">Conta</label>
+            
+                <label for="pessoas">Quantidade de pessoas</label>
+                <p>Não pode ser zero</p>
+                <div>
+                    <img src="./images/icon-person.svg" alt="icone das pessoas">
+                    <input type="number" nome="pessoas" id="pessoas" placeholder="0">
+                </div>
           </div>
         </form>
 
+    </section>
+    <section class="resultados">
+      <div class="gotjeta-total">
+        <p>
+            <strong>Gorjeta</strong> <br>
+            /  pessoa
+        </p>
+          <strong>$ 0.00</strong>
+      </div>
+      <div class="total">
+        <p>
+            <strong>Total</strong> <br>
+            /  pessoa
+        </p>
+          <strong>$ 0.00</strong>
+      </div>
     </section>
    </main>
 </body>
